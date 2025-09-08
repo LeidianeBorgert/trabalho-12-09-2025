@@ -10,52 +10,36 @@
 
 <body>
 
-    <div class="container1">
-        <img src="">
-    </div>
-
-    <div class="navbar">
-        <a id="navbar" href="servicos.html">Serviços</a>
-        <a id="navbar" href="produtos.html">Produtos</a>
-        <a id="navbar" href="parceiros.html">Parceiros</a>
-        <a id="navbar" href="contatos.html">Contatos</a>
-        <a id="navbar" href="cadastro.html">Cadastro</a>
-        <a id="navbar" href="login.html">Login</a>
-        <a id="navbar" href="avaliacao.html">Avaliação</a>
-        <a id="navbar" href="home.html">Voltar</a>
-    </div>
-
     <main>
 
         <div class="container">
-            <form>
-
-                <h1>Fazer Login</h1>
-
-                <div class="input-container">
-                    <label for="">Email</label>
-                    <input type="text" name="email" id="email" >
+            <div class="card">
+                <h1>Entrar</h1>
+                <div class="label-float">
+                    <input type="text" id="usuario" placeholder="">
+                    <label for="usuario">Usuário</label>
                 </div>
-
-                <div class="input-container">
-                    <label for="">Senha</label>
-                    <input type="password" name="senha" id="senha" >
+                <div class="label-float">
+                    <input type="password" id="senha" placeholder="">
+                    <label for="senha">Senha</label>
                 </div>
-                <div class="input-container">
-                <button type="submit" class="btn" id="btnLogar">Entrar</button>
+                <div class="justify-center">
+                    <button>Entrar</button>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                <p>Não tem uma conta?
+                    <a href="">Cadastre-se</a>
+                </p>
+
             </div>
 
 
-                <div class="register-link">
-                    <p>Não está cadastrado ? <a href="cadastro.html">Cadastrar</a> </p>
-                </div>
-
-            </form>
-            <script src="js/login.js"></script>
         </div>
 
     </main>
-
+    <script src="js/login.js"></script>
 </body>
 
 </html>
