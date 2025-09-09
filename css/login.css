@@ -129,3 +129,11 @@ a:hover {
     color: #5b0f55;
 
 }
+.fa-eye{
+    position: absolute;
+    top:15px;
+    right: 10px;
+    cursor: pointer;
+    color: #0d3418;
+
+}

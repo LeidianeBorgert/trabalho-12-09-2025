@@ -70,7 +70,8 @@ h1 {
     transition: all 0.3s ease-out;
 }
 
-.label-float input:focus+label {
+.label-float input:focus+label,
+.label-float input:valid+label{
     font-size: 13px;
     margin-top: 0;
     color: #49083a;
@@ -100,6 +101,15 @@ button:hover {
 .justify-center {
     display: flex;
     justify-content: center;
+}
+
+.fa-eye{
+    position: absolute;
+    top:15px;
+    right: 10px;
+    cursor: pointer;
+    color: #5d0a47;
+
 }
 
 
