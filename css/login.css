@@ -69,7 +69,8 @@ h1 {
     transition: all 0.3s ease-out;
 }
 
-.label-float input:focus+label {
+.label-float input:focus+label ,
+.label-float input:valid+label{
     font-size: 13px;
     margin-top: 0;
     color: #0d3418;
