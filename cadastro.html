@@ -8,110 +8,42 @@
     <link rel="stylesheet" href="css/cadastro.css">
 </head>
 
+
 <body>
-    <div class="container1">
-        <img src="">
-    </div>
-    <div class="navbar">
 
-        <a href="servicos.html">Serviços</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="parceiros.html">Parceiros</a>
-        <a href="contatos.html">Contatos</a>
-        <a href="cadastro.html">Cadastro</a>
-        <a href="login.html">Login</a>
-        <a href="avaliacao.html">Avaliação</a>
-        <a href="home.html">Voltar</a>
-    </div>
     <main>
-    <div class="container-junto">
-<div class="form-container">
-        <h1>Cadastre-se</h1>
-        <ul>
-            <form action="login.html" method="get">
-                <label for="campo-name">Nome</label>
-                <input type="text" required minlength="3" maxlength="70" id="campo-name" name="Nome">
-                <br>
-                <br>
 
-                <label for="campo-idade">Idade</label>
-                <input type="number" required min="1" max="100" id="campo-idade" name="Idade">
-                <br>
-                <br>
-                <label>Email</label>
-                <input type="email" required name="email">
-                <br>
-                <br>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha">
-        </ul>
-        <h2>Endereço</h2>
-        <ul>
-            <label>Estado</label>
-            <select name="estado" required>
-                <option value="">Selecione um estado</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-            </select>
-        </ul>
-        <ol>
-            <label for="campo-cidade">Cidade</label>
-            <input type="text" minlength="2" maxlength="50" id="campo-cidade" name="Cidade">
-            <br>
-            <br>
-            <label for="campo-bairro">Bairro</label>
-            <input type="text" id="campo-bairro" name="bairro">
-            <br>
-            <br>
-            <label for="cep">CEP:</label>
-            <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}"
-                title="Formato esperado: 00000-000" maxlength="9" required>
-            <br>
-            <br>
-            <label for="campo-numero">Número</label>
-            <input type="text" id="campo-numero" name="Número">
-            <br>
-            <br>
-            <label for="campo-logradouro">Logradouro</label>
-            <input type="text" id="campo-logradouro" name="Logradouro">
-            <br>
-            <br>
-            <label for="campo-complemento">Complemento</label>
-            <input type="textarea" id="campo-complemento" name="Complemento">
-        </ol>
+        <div class="container">
+            <div class="card">
+                <h1>Cadastrar</h1>
+                <div class="label-float">
+                    <input type="text" id="nome" placeholder="">
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="label-float">
+                    <input type="text" id="usuario" placeholder="">
+                    <label for="usuario">Usuário</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" id="senha" placeholder="">
+                    <label for="senha">Senha</label>
+                </div>
+                 <div class="label-float">
+                    <input type="password" id="confirmarSenha" placeholder="">
+                    <label for="confirmarSenha">Confimar Senha</label>
+                </div>
+                <div class="justify-center">
+                    <button>Cadastrar</button>
+                </div>
+                
+
+            </div>
 
 
-        <button type="submit">Enviar</button>
-        </form>
         </div>
-        <div class="imagem-container"></div>
-        </div>
-        </main>
+
+    </main>
+   
         
 
 </body>
