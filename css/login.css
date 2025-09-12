@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/006/954/295/non_2x/rabbit-cartoon-character-seamless-pattern-on-green-background-pixel-style-vector.jpg);
+    background-image: url(https://i.pinimg.com/736x/5c/65/aa/5c65aac759bf9820d23c69cd0f664f20.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
 }
 
 .card {
-    background-color: #3ef47180;
+    background-color: #3ed9f480;
     padding: 30px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000080
@@ -31,7 +31,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #0d3418;
+    color: #176977;
 }
 
 .label-float input {
@@ -39,7 +39,7 @@ h1 {
     padding: 5px 5px;
     display: inline-block;
     border: 0;
-    border-bottom: 1px solid #0d3418;
+    border-bottom: 1px solid #176977;
     background-color: transparent;
     outline: none;
     min-width: 180px;
@@ -56,11 +56,11 @@ h1 {
 }
 
 .label-float input:focus {
-    border-bottom: 2px solid #0d3418;
+    border-bottom: 2px solid #176977;
 }
 
 .label-float label {
-    color: #0d3418;
+    color: #135c69;
     pointer-events: none;
     position: absolute;
     top: 0;
@@ -73,14 +73,14 @@ h1 {
 .label-float input:valid+label{
     font-size: 13px;
     margin-top: 0;
-    color: #0d3418;
+    color: #176977;
 }
 
 button {
     width: 100%;
-    background-color: #0ca43a;
-    border-color: #0ca43a;
-    color:#0d3418;
+    background-color: #1798af;
+    border-color: #12889c;
+    color:#06424d;
     padding: 7px;
     font-weight: bold;
     font-size: 12px;
@@ -94,7 +94,7 @@ button {
 }
 
 button:hover {
-    background-color: #0d3418;
+    background-color: #0e4c57;
     color: #ffff;
 }
 
@@ -111,13 +111,13 @@ hr {
 }
 
 p {
-    color: #0d3418;
+    color: #0e454e;
     font-size: 14px;
     text-align: center;
 }
 
 a {
-    color: #bf20b2;
+    color: #0d10db;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease-out;
@@ -126,15 +126,21 @@ a {
 }
 
 a:hover {
-    color: #5b0f55;
+    color: #551ab3;
 
+}
+#voltar:hover{
+    color: #ffff;
+}
+#voltar{
+    color: #0e454e;
 }
 .fa-eye{
     position: absolute;
     top:15px;
     right: 10px;
     cursor: pointer;
-    color: #0d3418;
+    color: #0e454e;
 
 }
 #mensagemErro{

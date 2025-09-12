@@ -98,6 +98,14 @@ button:hover {
     background-color: #5d0a47;
     color: #ffff;
 }
+
+#voltar:hover{
+    color: #ffff;
+}
+a#voltar{
+    color: #5d0a47;
+    text-decoration:none;
+}
 .justify-center {
     display: flex;
     justify-content: center;

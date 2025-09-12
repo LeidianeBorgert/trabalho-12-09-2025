@@ -1,52 +1,87 @@
-//eventos
-let todoForm = document.querySelector(`#todo-form`);
-let todoInput = document.querySelector(`#todo-input`);
-let todoList = document.querySelector(`#todo-list`);
-
-
-let saveTodo = (text) => {
-    let todo = document.createElement("div");
-    todo.classList.add("todo");
-
-    let todoTitle = document.createElement("h3");
-    todoTitle.innerText = text;
-    todo.appendChild(todoTitle);
-
-    let doneBtn = document.createElement("buttom")
-    doneBtn.classList.add("finish-todo")
-    doneBtn.innerHTML = `<i class="fa-solid fa-check"></i>`
-    todo.appendChild(doneBtn);
-
-    let deleteBtn = document.createElement("buttom")
-    deleteBtn.classList.add("finish-todo")
-    deleteBtn.innerHTML = ` <i class="fa-solid fa-trash"></i>`
-    todo.appendChild(deleteBtn);
-
-    todoList.appendChild(todo);
-    todoInput.value = "";
-    todoInput.focus();
+let body = document.getElementsByTagName("body")[0];
+let ul = document.createElement("ul");
+ul.id = "lista-produtos";
 
 
 
+
+function criarTitulo() {
+    let h1 = document.createElement("h1");
+    h1.innerText = "Bunny To-do 🐇";
+    h1.classList.add("titulo");
+
+    body.appendChild(h1);
 }
 
-todoForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    let inputValue = todoInput.value;
-    if (inputValue) {
-        saveTodo(inputValue);
-    }
-});
+function listaTodo() {
 
-document.addEventListener(`click`, (e) => {
-    let targetEl = e.target;
-    let parentEl = targetEl.closest("div");
 
-    if (targetEl.classList.contains("finish-todo")) {
-        parentEl.classList.toggle("done");
-    }
-    if (targetEl.classList.contains("remove-todo")) {
-        parentEl.remove();
-    }
+    let input = document.createElement("input"); 
+    input.id = "campo-nome"; 
+    input.setAttribute("type", "text"); 
+    input.placeholder = "O que você vai fazer?";
+    input.addEventListener("keyup", processarEventoTecla);
 
-})
+    let label = document.createElement("label"); 
+    label.setAttribute("for", "campo-nome"); 
+    label.innerText = "Adicione sua tarefa: 📝";
+
+    body.appendChild(label);
+    body.appendChild(input);
+}
+
+function botaoCadastrar() {
+  
+    let botao = document.createElement("button");
+    botao.setAttribute("type", "submit");
+   botao.innerText = "Cadastrar ✔️";
+   
+    botao.addEventListener("click", cadastrar);
+
+    body.appendChild(botao);
+}
+
+function criarLista() {
+    body.appendChild(ul);
+}
+
+function cadastrar() {
+    let input = document.getElementById("campo-nome");
+    let nome = input.value;
+    criarItemNaUl(nome);
+
+
+    input.value = "";
+    input.focus();
+}
+
+function criarUl(nomeProduto) {
+
+    let li = document.createElement("li");
+    li.innerText = nomeProduto;
+    ul.appendChild(li);
+}
+
+function processarEventoTecla(evento) {
+    if (evento.key === "Enter") {
+        cadastrar();
+    }
+}
+
+function botaoLimparLista() {
+    let botaoLimparLista = document.createElement("button");
+    botaoLimparLista.setAttribute("type", "submit");
+    botaoLimparLista.innerText = "Limpar Lista ❌";
+    botaoLimparLista.addEventListener("click", limparLista);
+    body.appendChild(botaoLimparLista);
+}
+
+function limparLista() {
+    ul.innerHTML = "";
+}
+
+criarTitulo()
+listaTodo();
+botaoCadastrar();
+criarLista();
+botaoLimparLista();

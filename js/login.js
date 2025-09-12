@@ -37,7 +37,7 @@ function entrar() {
     });
 
     if (usuario.value === userValide.usuario && senha.value === userValide.senha) {
-        window.location.href = "index.html"
+        window.location.href = "lista.html"
 
     } else {
         usuarioLabel.setAttribute("style", "color:red")
